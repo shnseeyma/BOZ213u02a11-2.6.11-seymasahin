@@ -1,0 +1,9 @@
+hour = int(input("Starting time (hours): "))
+mins = int(input("Starting time (minutes): "))
+dura = int(input("Event duration (minutes): "))
+toplam_dakika = mins + dura
+eklenecek_saat = toplam_dakika // 60
+bitis_dakikasi = toplam_dakika % 60
+toplam_saat = hour + eklenecek_saat
+bitis_saati = toplam_saat % 24
+print(bitis_saati, bitis_dakikasi, sep=":")
